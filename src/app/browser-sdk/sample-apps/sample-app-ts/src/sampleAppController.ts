@@ -19,7 +19,7 @@ export var SampleApp = ((): any => {
   var latestIDScanResult: FaceTecIDScanResult | null = null;
 
   // Wait for onload to be complete before attempting to access the Browser SDK.
-  window.onload = (): void => {
+  var initialize = (): void => {
     SampleAppUtilities.formatUIForDevice();
 
     // Set a the directory path for other FaceTec Browser SDK Resources.
@@ -269,6 +269,7 @@ export var SampleApp = ((): any => {
   }
 
   return {
+    initialize,
     onLivenessCheckPressed,
     onEnrollUserPressed,
     onAuthenticateUserPressed,
