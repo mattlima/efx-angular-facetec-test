@@ -8,6 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "engines": {
+    "node": "16.20.2"
+  },
   "private": true,
   "dependencies": {
     "@angular-builders/custom-webpack": "^16.0.1",
