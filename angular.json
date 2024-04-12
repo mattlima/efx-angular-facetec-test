@@ -25,7 +25,17 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./src/app/browser-sdk/core-sdk",
+                "output": "/core-sdk"
+              },
+              {
+                "glob": "**/*",
+                "input": "./src/app/browser-sdk/sample-app-resources",
+                "output": "/sample-app-resources"
+              }
             ],
             "styles": [
               "src/styles.css"
